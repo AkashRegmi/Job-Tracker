@@ -18,7 +18,7 @@ const requiredEnv = [
   "SUPERADMIN_EMAIL",
   "SUPERADMIN_PASSWORD",
   "SUPER_ADMIN_NAME",
-  "OPEN_AI_APIKEY",
+  
 ] as const;
 //here Without as const, TypeScript allows you to modify the array later (e.g., requiredEnv.push("NEW_VAR")). With as const, the array becomes completely immutable. If you try to add, remove, or change elements, TypeScript will throw a compiler error.
 //for thr misssing env
@@ -66,6 +66,6 @@ export const env = {
   super_admin_email: process.env.SUPERADMIN_EMAIL,
   super_admin_password: process.env.SUPERADMIN_PASSWORD,
   super_admin_name: process.env.SUPER_ADMIN_NAME,
-  openai_apikey: process.env.OPEN_AI_APIKEY,
+ 
 };
 console.log("Environment variables loaded successfully");
